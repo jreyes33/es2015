@@ -1,8 +1,51 @@
-#editor {
+body .pane {
+  bottom: 0;
   font-size: 18px;
   position: absolute;
   top: 0;
+  width: 50%;
+}
+
+.output {
+  height: 50%;
+  font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospaace;
+  overflow-x: scroll;
   right: 0;
-  bottom: 0;
+  white-space: pre;
+}
+
+.output .ace_hidden-cursors .ace_cursor {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#editor {
   left: 0;
+}
+
+#transpiled {
+}
+
+#output {
+  background-color: #fff;
+}
+
+#output,
+#errors {
+  top: 50%;
+}
+
+#errors {
+  background-color: #fcc;
+}
+
+.buttons {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  right: 50%;
+  margin: 0 8px 6px 0;
 }
