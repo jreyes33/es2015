@@ -1,10 +1,11 @@
 {
-  "name": "es6-demo",
+  "name": "es2015",
   "version": "0.0.1",
-  "description": "An ES6 interactive demo",
+  "private": true,
+  "description": "An interactive presentation on ES 2015 (ES6)",
   "main": "scripts/index.js",
   "scripts": {
-    "prepublish": "./node_modules/.bin/cleaver slides.md && ./node_modules/.bin/browserify -t babelify -t uglifyify scripts/index.js -o scripts/bundle.js",
+    "prepublish": "./node_modules/.bin/cleaver README.md && ./node_modules/.bin/browserify -t babelify -t uglifyify scripts/index.js -o scripts/bundle.js",
     "start": "./node_modules/.bin/beefy scripts/index.js:scripts/bundle.js --open -- -t babelify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

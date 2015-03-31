@@ -3,7 +3,7 @@ author:
   name: Jonathan Reyes
   twitter: jreyes33
   url: http://jreyes.org
-output: slides.html
+output: index.html
 style: styles/slides.css
 
 --
@@ -88,7 +88,7 @@ and others](images/using-babel.png)](http://babeljs.io/docs/using-babel/)
 
 -- demo
 
-<iframe src="index.html"></iframe>
+<iframe src="demo.html"></iframe>
 
 --
 
