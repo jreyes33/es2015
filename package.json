@@ -4,7 +4,8 @@
   "description": "An ES6 interactive demo",
   "main": "scripts/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/beefy scripts/index.js --open -- -t babelify",
+    "prepublish": "./node_modules/.bin/cleaver slides.md && ./node_modules/.bin/browserify -t babelify -t uglifyify scripts/index.js -o scripts/bundle.js",
+    "start": "./node_modules/.bin/beefy scripts/index.js:scripts/bundle.js --open -- -t babelify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonathan Reyes <j@jreyes.org>",
@@ -16,6 +17,8 @@
   "devDependencies": {
     "babelify": "^5.0.4",
     "beefy": "^2.1.3",
-    "browserify": "^9.0.3"
+    "browserify": "^9.0.3",
+    "cleaver": "^0.7.3",
+    "uglifyify": "^3.0.1"
   }
 }
