@@ -2,7 +2,7 @@ title: ECMAScript 2015
 author:
   name: Jonathan Reyes
   twitter: jreyes33
-  url: http://jreyes.org/es2015
+  url: https://jreyes.org/es2015
 output: index.html
 style: styles/slides.css
 
